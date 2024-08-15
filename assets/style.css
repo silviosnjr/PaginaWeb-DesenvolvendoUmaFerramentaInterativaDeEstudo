@@ -6,7 +6,7 @@
 
 body{
     background: url('img/bg-desktop.webp');
-    font-family: Bai Jamjuree;
+    font-family: Bai Jamjuree Bai;
 }
 
 #container{
@@ -60,7 +60,7 @@ body{
     font-weight: 700;
 }
 
-.cartao:hover .cartao__conteudo{
+.cartao.active .cartao__conteudo{
     transform: rotateY(180deg);   
 }
 
