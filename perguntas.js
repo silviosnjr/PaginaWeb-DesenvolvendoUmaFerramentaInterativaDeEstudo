@@ -1,6 +1,6 @@
 criaCartao(
-    'Programação', 
-    'O que é Python?', 
+    'Geografia', 
+    'Qual é o grande reservatório de água que o Paraná compartilha com outros estados e países?', 
     'O Python é uma linguagem de programação'
 )
 
