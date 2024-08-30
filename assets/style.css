@@ -62,6 +62,11 @@ body{
 .cartao__conteudo__resposta p{
     color: var(--card-back-color);
     font-weight: 700;
+    font-size: 1.4vw;
+}
+
+.cartao__conteudo__resposta img{
+    width: 15%;
 }
 
 .cartao.active .cartao__conteudo{
