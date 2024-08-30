@@ -1,23 +1,36 @@
 criaCartao(
-    'Geografia', 
-    'Qual é o grande reservatório de água que o Paraná compartilha com outros estados e países?', 
-    'O Python é uma linguagem de programação'
+    'O que é o que é ?', 
+    'Anda com os pés na cabeça.', 
+    'Piolho'
 )
 
 criaCartao(
-    'Geografia', 
-    'Qual a capital da França?', 
-    'A capital da França é Paris'
+    'O que é o que é ?', 
+    'Tem no meio do ovo.', 
+    'a letra V'
 )
 
 criaCartao(
-    'Programação', 
-    'O que é uma função ?', 
-    'Uma função é um bloco de código que executa alguma tarefa'
+    'O que é o que é ?', 
+    'Está sempre no meio da rua e de pernas para o ar.', 
+    'A letra U'
 )
 
 criaCartao(
-    'Lingua inglesa',
-    'Como se diz oi em inglês',
-    "Oi em inglês é HI (RAI)"
+    'O que é o que é ?',
+    'Tem cauda, mas não é cão; não tem asas, mas sabe voar. Se a largam, não sobe, e sai ao vento a brincar.',
+    'A pipa'
 )
+
+criaCartao(
+    'O que é o que é ?',
+    'O tomate foi fazer no banco.',
+    'Um extrato'
+)
+
+criaCartao(
+    'O que é, o que é ?',
+    'Anda com a barriga para trás.',
+    'Quanto maior menos se vê.'
+)
+
