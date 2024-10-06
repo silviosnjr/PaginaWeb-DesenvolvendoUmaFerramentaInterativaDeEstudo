@@ -1,26 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
 :root {
-    --text-color: #DBE4EF;
-    --card-front-color: #144480;
-    --card-back-color: #00F4BF;
+    --text-color: #000000;
+    --card-front-color: #F75F1C;
+    --card-back-color: #ff9a00;
+    --borda-ativa: #85e21f;
 }
 
 body{
-    background: url('img/bg-desktop.webp');
-    font-family: Bai Jamjuree Bai;
+    background: url('img/bg-desktop-yellow.webp');
+    font-family: "Eater", serif;
 }
 
 #container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 3rem;
+    /* padding: 3rem; */
 }
 
 .cartao{
-    margin: 1rem 1rem;
-    height: 20rem;
+    margin: 0.5rem 1rem;
+    height: 9.5rem;
     flex-grow: 1;
-    flex-basis: calc(33% - 6rem);
+    flex-basis: calc(20% - 2rem);
 }
 
 .cartao__conteudo{
@@ -38,26 +40,29 @@ body{
     text-align: left;
     padding: 0.5rem;
     position: absolute;
-    margin: 0.6rem;
+    margin: 0.6rem; 
     border-radius: 0.6rem;
     font-size: 1vw;
     backface-visibility: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .cartao__conteudo p{
-    margin-top: 1rem;
-    padding: 2rem;
-    margin-top: 4rem;
+    margin-top: 0;
+    /* padding: 2rem; */
+    /* margin-top: 4rem; */
 }
 
 .cartao__conteudo__pergunta p{
     color: var(--text-color);
-    font-weight: 500;
+    /* font-weight: 500; */
+    font-size: 1.4rem;
 }
 
 .cartao__conteudo__resposta p{
     color: var(--card-back-color);
-    font-weight: 700;
+    /* font-weight: 700; */
+    font-size: 1rem;
 }
 
 .cartao.active .cartao__conteudo{
@@ -70,10 +75,13 @@ body{
     position: absolute;
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .cartao__conteudo__resposta{
     transform: rotateY(180deg);
+    background-color: rgba(0, 244, 191, 0.2);
+    border: 4px solid var(--card-back-color);
 }
 
 footer{
@@ -89,4 +97,57 @@ footer p{
     text-align: center;
     font-size: 0.6rem;
     margin-top: 0.5rem;
+}
+
+.cartao__conteudo__resposta img{
+  width: 6em;
+  margin-top: 10px;
+}
+
+.cartao__conteudo__pergunta img{
+  width: 6em;
+  margin-top: 10px;
+}
+
+.matched {
+  opacity: 0.5;
+  pointer-events: none; /* Impede interação com os cartões */
+}
+
+.matched .cartao__conteudo__resposta{
+  border-color: var(--borda-ativa);
+}
+
+@media (max-width: 560px) {
+    
+    body{
+        background: url('img/bg-mobile-yellow.webp');    
+    }
+
+    .cartao{
+        flex: 1 0 calc(33% - 2rem);
+    }
+    
+    .cartao__conteudo h3{
+        font-size: 3vw;
+    }
+
+    .cartao__conteudo p{
+        font-size: 3.8vw;
+    }
+
+    .cartao__conteudo__resposta p{
+      font-size: 0.8rem;
+    }
+
+    .cartao__conteudo__pergunta img{
+      width: 5em;
+      margin-top: 30px;
+    }
+
+    .cartao__conteudo__resposta img{
+      width: 5em;
+      margin-top: 30px;
+    }
+    
 }
