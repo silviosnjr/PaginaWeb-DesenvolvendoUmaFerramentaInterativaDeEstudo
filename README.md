@@ -59,5 +59,5 @@ Além disso, foi realizada a identificação de padrões no código para melhora
 <br>
 ---
 
-Feito ❤️‍ por Guilherme 😁:wave:
+Feito por Charlys Cristian😁:wave:
 <br>🧑‍🚀<a href="https://silviosnjr.github.io/PaginaWeb-DesenvolvendoUmaFerramentaInterativaDeEstudo/">Clique aqui para acessar o projeto!</a>
